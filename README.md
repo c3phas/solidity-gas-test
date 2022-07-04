@@ -26,3 +26,25 @@ By default the test is set to fail, you can modify this behavior by adjusting th
 
 ### Foundry.toml
 You can adjust the optimizer here
+
+
+### Sample results
+- When the revert condition is not met it is cheaper to have split require statements 
+```
+function split(uint256 num1,uint256 num2) public pure returns (uint256){
+    require (num1 > 10, "num1 should be > 10");
+    require (num2 < 10, "num2 should be < 10);
+    return num1-num2;
+}
+```
+
+
+- When the revert condition is met, it is cheapert to use && to combine the require statements
+```
+function split(uint256 num1,uint256 num2) public pure returns (uint256){
+    require (num1 > 10 && num2 < 10, "num1 should be > 10 && num2 < 10");
+    return num1-num2;
+}
+```
+
+
