@@ -7,9 +7,9 @@ The optimizer is enabled and set to 10K
 
 ### Setting things up
 
-    1.Install foundry, refer to [foundry](https://github.com/foundry-rs/foundry)
-    2.Install nodejs, refer to [nodejs](https://nodejs.org/en/)
-    3.Install yarn, npm install --global yarn
+1. Install foundry, refer to [foundry](https://github.com/foundry-rs/foundry)
+1. Install nodejs, refer to [nodejs](https://nodejs.org/en/)
+1. Install yarn, npm install --global yarn
 
 
 ```
