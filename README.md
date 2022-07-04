@@ -30,7 +30,7 @@ You can adjust the optimizer here
 
 ### Sample results
 - When the revert condition is not met it is cheaper to have split require statements 
-```
+```solidity
 function split(uint256 num1,uint256 num2) public pure returns (uint256){
     require (num1 > 10, "num1 should be > 10");
     require (num2 < 10, "num2 should be < 10);
@@ -41,7 +41,7 @@ function split(uint256 num1,uint256 num2) public pure returns (uint256){
 
 
 - When the revert condition is met, it is cheapert to use && to combine the require statements
-```
+```solidity
 function split(uint256 num1,uint256 num2) public pure returns (uint256){
     require (num1 > 10 && num2 < 10, "num1 should be > 10 && num2 < 10");
     return num1-num2;
