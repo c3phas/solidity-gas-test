@@ -33,7 +33,7 @@ You can adjust the optimizer here
 ```solidity
 function split(uint256 num) public pure returns (uint256){
     require (num > 20, "num should be > 20");
-    require (num < 30, "num should be < 30);
+    require (num < 30, "num should be < 30");
     return num;
 }
 ```
