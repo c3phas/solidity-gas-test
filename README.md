@@ -37,6 +37,7 @@ function split(uint256 num1,uint256 num2) public pure returns (uint256){
     return num1-num2;
 }
 ```
+![failed](https://user-images.githubusercontent.com/29732994/177159032-4c8b5f01-1613-485f-b795-f1151c94a3c1.png)
 
 
 - When the revert condition is met, it is cheapert to use && to combine the require statements
@@ -46,5 +47,10 @@ function split(uint256 num1,uint256 num2) public pure returns (uint256){
     return num1-num2;
 }
 ```
+![passed](https://user-images.githubusercontent.com/29732994/177159053-8bdf57c9-7ea5-4a97-9e1a-9193acd932a0.png)
+
+
+
+
 
 
