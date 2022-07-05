@@ -28,7 +28,9 @@ By default the test is set to fail, you can modify this behavior by adjusting th
 You can adjust the optimizer here
 
 
-### Sample results(renamed the function names for ease of reading here :) pretty chaotic dev )
+### Sample results
+**renamed the function names for ease of reading here :) pretty chaotic dev**
+
 - When the revert condition is not met it is cheaper to have split require statements 
 ```solidity
 function split(uint256 num) public pure returns (uint256){
