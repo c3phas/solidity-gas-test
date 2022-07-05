@@ -50,6 +50,32 @@ function split(uint256 num) public pure returns (uint256){
 ![passed](https://user-images.githubusercontent.com/29732994/177159053-8bdf57c9-7ea5-4a97-9e1a-9193acd932a0.png)
 
 
+## Working with two variables
+
+```solidity
+    function split(uint256 num1, uint256 num2) external  pure returns(uint256){
+        require (num1 < 10,"num1 should be < 10");
+        require(num2 > 15, "num2 should be > 15");
+        return num2 - num1;
+    }
+```
+Gas -- 5512
+
+```solidity
+    function notsplit(uint256 num1,uint256 num2) public pure returns(uint256){
+        require (num1 < 10 && num2 > 15, "num1 should be < 10 & num2 > 15");
+        return num2 - num1;
+    }
+```
+Gas -- 5531
+
+When one of the require statement(or both) fails it is cheaper to have split require statement compared to using && (~19 gas cheaper) ie if revert condition is met
+
+When both revert condition are not met, it is also cheaper to have split statements( ~8 gas cheaper)
+
+
+**NOTE**: As the order of functions affects how much gas is consumed it is advisable to test one function at a time or simply try them from two different contracts.
+
 
 
 
