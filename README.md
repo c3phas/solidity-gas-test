@@ -53,7 +53,7 @@ function split(uint256 num) public pure returns (uint256){
 ## Working with two variables
 
 ```solidity
-    function split(uint256 num1, uint256 num2) external  pure returns(uint256){
+    function split(uint256 num1, uint256 num2) public pure returns(uint256){
         require (num1 < 10,"num1 should be < 10");
         require(num2 > 15, "num2 should be > 15");
         return num2 - num1;
