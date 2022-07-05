@@ -29,7 +29,7 @@ You can adjust the optimizer here
 
 
 ### Sample results
-**renamed the function names for ease of reading here :) pretty chaotic dev**
+**Renamed the function names for ease of reading here :) pretty chaotic dev**
 
 - When the revert condition is not met it is cheaper to have split require statements 
 ```solidity
