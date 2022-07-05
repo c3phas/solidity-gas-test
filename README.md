@@ -1,5 +1,5 @@
 # solidity-gas-test
-Testing gas optimizations for split/not split require statement.
+Testing gas optimizations for split/not split require statement. This is a result of  a discussion on twitter that can be found https://twitter.com/JustDravee/status/1543735607544922113
 
 This was tested with the compiler version ^0.8.13
 The optimizer is enabled and set to 10K
